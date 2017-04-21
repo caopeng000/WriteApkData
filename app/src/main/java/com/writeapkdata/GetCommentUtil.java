@@ -9,14 +9,7 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-/******************************************
- * 类名称：GetCommentUtil
- * 类描述：获取comment文件
- *
- * @version: 2.3.1
- * @author: caopeng
- * @time: 2017/4/20 18:07
- ******************************************/
+
 public class GetCommentUtil {
 
     public static void main(String[] args) {
