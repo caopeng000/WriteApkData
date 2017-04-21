@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
                     Toast.makeText(MainActivity.this, "请填写APK名称(默认放到SD卡根目录)", Toast.LENGTH_LONG).show();
                     return;
                 }
-                tv_name.setText(mChannelName + "-app.apk");
+                tv_name.setText(mChannelName + "-" + etApkName);
                 apkPath = getSdCardPath() + "/" + etApkName;
                 final File file = new File(apkPath);
                 if (file.exists()) {
@@ -106,7 +106,7 @@ public class MainActivity extends Activity {
             accessFile.seek(file.length() - 2);
             accessFile.write(short2Stream((short) data.length));
             accessFile.write(data);
-            String renameApkPath = getSdCardPath() + "/" + comment + "-app.apk";
+            String renameApkPath = getSdCardPath() + "/" + comment + "-" + etApkName;
             File file1 = new File(renameApkPath);
             file.renameTo(file1);
             Toast.makeText(MainActivity.this, "写入渠道成功", Toast.LENGTH_LONG).show();

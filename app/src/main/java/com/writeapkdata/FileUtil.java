@@ -102,8 +102,8 @@ public class FileUtil {
                 output.write(buf, 0, bytesRead);
             }
         } finally {
-            input.close();
-            output.close();
+            FileUtil.closeStream(input);
+            FileUtil.closeStream(output);
         }
     }
 
