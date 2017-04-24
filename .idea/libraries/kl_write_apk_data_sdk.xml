@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="kl_write_apk_data_sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/kl_write_apk_data_sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/app/libs/kl_write_apk_data_sdk.jar!/" />
+    </SOURCES>
+  </library>
+</component>
